@@ -1,0 +1,42 @@
+/*=========================================================
+
+  PAGINATION
+
+=========================================================*/
+
+
+.pagination {
+	margin-top: rem-calc(30);
+
+	@media #{$medium-down} {
+		margin-top: rem-calc(20);
+	}
+	
+	li {
+		width: auto;
+		display: inline-block;
+		float: left;
+		margin-right: rem-calc(10);
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&.current {
+			a {
+				background: $bg;
+				color: $dark-grey;
+			}
+		}
+	}
+
+	a {
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		line-height: rem-calc(40);
+		background: $primary-color;
+		color: $white;
+		display: block;
+	}
+}

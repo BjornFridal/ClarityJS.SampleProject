@@ -1,0 +1,24 @@
+form(id="apply-form" class="reveal-modal" data-reveal data-abide)
+  .widget
+    h4 TILMELD DIG STATUS FOR LITERacy
+    p Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+    div
+        label(for="apply-name") Navn
+        input(type="text" id="apply-name" required)
+    div
+        label(for="apply-email") Emailadresse
+        input(type="email" id="apply-email" required)
+    div
+        label(for="apply-employment") Ansættelsessted
+        input(type="text" id="apply-employment" required)
+    div
+        label(for="apply-address") Faktureringsadresse
+        input(type="text" id="apply-address" required)
+    div
+        label(for="apply-number") EAN-nummer
+        input(type="text" id="apply-number" required)
+    div
+        label(for="apply-allergy") Allergier
+        input(type="text" id="apply-allergy" required)
+    input(type="submit" class="button" value="Indsend timelding")
+  a(class="fa fa-times close-reveal-modal" aria-label="Close")

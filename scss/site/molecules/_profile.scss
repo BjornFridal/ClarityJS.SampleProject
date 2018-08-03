@@ -1,0 +1,79 @@
+/*=========================================================
+
+  PROFILE 
+  	// layout for team member
+
+=========================================================*/
+
+.profile {
+	background: $bg;
+	min-height: 130px;
+	position: relative;
+	padding-left: rem-calc(118);
+	font-size: rem-calc(14);
+	overflow: hidden;
+
+	.sidebar & {
+		margin-top: rem-calc(35);
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	h5 {
+		text-transform: uppercase;
+	}
+
+	em {
+		font-style: normal;
+		color: $primary-color;
+		font-family: $font-family-black;
+		display: block;
+	}
+
+	a {
+		display: block;
+	}
+
+	.link--simplified {
+		margin-top: rem-calc(16);
+	}
+
+	&.profile--expanded {
+		min-height: 220px;
+		margin-top: rem-calc(30);
+	}
+
+	// .sidebar & {
+	// @media #{$medium-only} {
+	// 	padding-left: rem-calc(20);
+	// }
+	// }
+}
+
+.profile__image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: $bg-light;
+
+	// .sidebar & {
+	// @media #{$medium-only} {
+	// 	display: none;
+	// }
+	// }
+
+	.profile--expanded & {
+		min-height: 220px;
+	}
+}
+
+.profile__content {
+	padding: rem-calc(15) rem-calc(15) rem-calc(10) 0;
+
+	p {
+		margin-bottom: 0;
+		margin-top: rem-calc(20);
+	}
+}

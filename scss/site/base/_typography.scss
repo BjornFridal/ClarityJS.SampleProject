@@ -1,0 +1,181 @@
+/*=========================================================
+
+  TYPOGRAPHY
+
+
+  01. #GLOBAL STYLES
+
+  02. #LINKS
+
+  	02.1. link highlighted
+  	02.2. link more
+  	02.3. link--on-dark
+	02.4. link--all
+	02.5. link--copy
+	02.6. link--details
+	02.7. link--download
+
+  03. #TITLES
+
+  	03.01. title uppercase
+  	03.02 title topic 
+	03.03 title light
+	03.04 title highlighted
+
+=========================================================*/
+
+
+/*=======================================================
+   01. #GLOBAL STYLES
+//=======================================================*/
+
+ul {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+h1, h2, h3 {
+	font-family: $font-family-thin;
+}
+
+h4 {
+	section & {
+		color: $primary-color;
+		text-transform: uppercase;
+		margin-bottom: rem-calc(15);
+	}
+}
+
+/*=======================================================
+   02. #LINKS
+//=======================================================*/
+
+a.link--highlighted { 
+	font-size: rem-calc(14);
+	line-height: rem-calc(14);
+	position: relative;
+	padding-left: rem-calc(20);
+
+	&:before {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 12px;
+		height: 13px;
+		line-height: 13px;
+		font-family: "FontAwesome";
+		content: "\f0a9";
+	}
+
+	.article & {
+		position: absolute;
+		bottom: 16px;
+		left: 20px;
+	}
+}
+
+.link--more {
+	float: right;
+	display: inline-block;
+	margin-top: rem-calc(20);
+}
+
+.link--on-dark {
+	color: $white !important;
+}
+
+.link--all {
+	margin-top: rem-calc(35) !important;
+}
+
+.link--copy {
+	position: relative;
+	padding-left: rem-calc(80);
+
+	a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 40px;
+		line-height: rem-calc(40);
+		color: $grey;
+		font-size: rem-calc(14);
+	}
+
+	strong {
+		width: 100%;
+		overflow: hidden;
+		height: 40px;
+		line-height: rem-calc(40);
+		background: $bg-input;
+		padding: 0 rem-calc(15);
+		display: inline-block;
+	}
+}
+
+a.link--simplified {
+	color: $dark-grey;
+}
+
+.link--details {
+	position: relative;
+	padding-left: rem-calc(20);
+	font-size: rem-calc(14);
+
+	&:before {
+		display: block;
+		position: absolute;
+		top: 3px;
+		left: 0;
+		width: 12px;
+		height: 13px;
+		line-height: 13px;
+		font-family: "FontAwesome";
+		content: "\f05a";
+	}
+
+	&.shown {
+		&:before { content: "\f00d";}
+	}
+}
+
+.link--download {
+	position: relative;
+	padding-left: rem-calc(20);
+	font-size: rem-calc(14);
+
+	&:before {
+		display: block;
+		position: absolute;
+		top: 3px;
+		left: 0;
+		width: 12px;
+		height: 13px;
+		line-height: 13px;
+		font-family: "FontAwesome";
+		content: "\f1c1";
+	}
+}
+
+/*=======================================================
+   03. #TITLES
+//=======================================================*/
+
+.title--uppercase {
+	text-transform: uppercase;
+}
+
+.title--topic {
+	color: $primary-color !important;
+	text-transform: uppercase;
+}
+
+.title--light {
+	color: $grey;
+	text-transform: uppercase;
+}
+
+.title--highlighted {
+	color: $primary-color !important;
+}

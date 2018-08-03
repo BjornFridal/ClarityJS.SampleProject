@@ -1,0 +1,115 @@
+<!doctype html>
+html(class="no-js" lang="en")
+  include includes/_head
+  body.home
+    include includes/_mobile-nav
+
+    .content-wrapper
+      include includes/_intro
+      include includes/_main-nav
+      article.article--open
+        .row
+          .medium-8.columns
+            h4.title--topic Kalender
+            h1 Status for Literacy 2015
+            .article__author
+              em Oprettet af <a href="#">Henriette Romme Lund</a>
+              
+        .row
+          .medium-8.columns
+            .article--open__content
+              p liquam ultrices, ipsum sit amet laoreet sollicitudin, lacus nisi feugiat neque, ut venenatis sem elit at tellus. Suspendisse lacinia lorem pretium interdum vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam eget egestas orci. Nunc mattis porttitor dolor eu ornare. 
+              p Cras vitae ex ultricies, sodales quam quis, semper lorem. Cras pretium, libero sit amet rutrum commodo, turpis nulla rutrum nisl, non sollicitudin dui augue nec nibh. Nulla ut nibh at mauris finibus placerat. Pellentesque ultrices aliquet quam gravida tempor. Praesent eu nisl at neque scelerisque sollicitudin. Mauris imperdiet justo at orci ultrices, id commodo augue euismod. Pellentesque quis dolor aliquam, vehicula sapien non, facilisis augue.
+
+              p Aliquam erat volutpat. Praesent eget nisi dapibus, pellentesque nisi non, volutpat magna. Nullam finibus justo sapien, nec imperdiet nulla vehicula a. Cras posuere iaculis tempor. Cras non nulla vitae ante bibendum mattis. Nunc sagittis augue sed velit posuere sagittis.
+
+            <!-- .article-open-content -->
+            .event__program
+              ul.accordion(data-accordion)
+                li.accordion-navigation.active
+                  <a href="#panel1">Program</a>
+                  div.content.active(id="panel1")
+                    div
+                      p: strong  Kl. 09.00
+                      p Lorem ipsum dolor sit amet
+                    div
+                      p: strong Kl. 09.30
+                      p Velkomst
+                      p Lorem ipsum dolor sit amet
+
+                    div 
+                      p: strong Kl. 9.45
+                      p Proin faucibus neque a lorem aliquam ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi a metus purus. Aliquam diam ipsum, vehicula nec lorem nec, tempus luctus ligula. Cras sit amet ante mattis, commodo quam non, consectetur lectus. 
+                      p Donec mauris enim, viverra sed fermentum in, vestibulum sit amet orci. Maecenas finibus dolor sed erat rutrum, vel egestas felis consectetur.
+                    div 
+                      p: strong Kl. 10.45
+                      p Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi a metus purus. Aliquam diam ipsum, vehicula nec lorem nec, tempus luctus ligula. Cras sit amet ante mattis, commodo quam non, consectetur lectus. 
+                      p Donec mauris enim, viverra sed fermentum in, vestibulum sit amet orci. Maecenas finibus dolor sed erat rutrum, vel egestas felis consectetur.
+                    div 
+                      p: strong Kl. 11.45
+                      p Frokost
+                    div 
+                      p: strong Kl. 16.00
+                      p Konferencen slutter
+
+
+            .widget
+              h4 Bilag
+              ul.list--downloads
+                li
+                  a(href="#") <span class="fa fa-file-pdf-o"></span> Anvendelse af digitale undervisningsmaterialer
+
+            .list--actions
+              ul
+                li: a(href='#')
+                  <i class="fa fa-facebook-square"></i> Del på Facebook
+                li: a(href='#')
+                  <i class="fa fa-envelope"></i> Del på email
+                li: a(href='#')
+                  <i class="fa fa-print"></i> Udskriv
+                li: a(href='#')
+                  <i class="fa fa-book"></i> Hent oplæsningsprogram
+            .link--copy.js-copy
+              a(href="#") Kopier link
+              strong http://localhost/freelancing-projects/videnomlaesning/videnom-open.html?
+
+          <!-- .large-8.columns -->
+
+          .medium-4.columns
+            .sidebar.mt-20
+              .widget
+                .list--eventinfo
+                  li
+                    h4 Dato
+                    p 8. September 2015
+                    p Kl. 9:00 - 16:00
+                  li
+                    h4 Sted
+                    p Den Sorte Diamant
+                    p Søren Kierkegaards Plads 1
+                    p 1016 København K
+                  li
+                    h4 ARRANGØR
+                    p Nationalt Videncenter for Laesning
+                  li
+                    h4 Timelding
+                    p Den Sorte Diamant
+                    p Søren Kierkegaards Plads 1
+                    p 1016 København K
+                  li
+                    h4 Pris
+                    p Den Sorte Diamant
+                    p Søren Kierkegaards Plads 1
+                    p 1016 København K
+                a(href="#" data-reveal-id="apply-form").button.mt-15 Tilmeld dig
+
+            <!-- sidebar -->
+          <!-- .large-4.columns -->
+        <!-- .row -->
+
+        include includes/_apply-form
+      include includes/_footer
+    <!-- content-wrapper -->
+
+    include includes/_scripts
+  <!-- body -->

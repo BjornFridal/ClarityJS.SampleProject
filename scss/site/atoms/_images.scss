@@ -1,0 +1,22 @@
+/*=========================================================
+
+  IMAGES
+
+=========================================================*/
+
+
+.img--simple {
+	display: block;
+	
+	html.svg & {
+		display: none;
+	}
+}
+
+.img--advanced {
+	display: none;
+
+	html.svg & {
+		display: block;
+	}
+}

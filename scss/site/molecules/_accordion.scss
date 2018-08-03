@@ -1,0 +1,57 @@
+/*=========================================================
+
+  #ACCORDION
+  	//extends foundation accordion styles
+
+=========================================================*/
+
+.accordion {
+	.content {
+		font-size: rem-calc(14);
+
+		p {
+			display: block;
+			margin: 0;
+		}
+
+		strong {
+			font-family: $font-family-black;
+		}
+
+		> div {
+			margin-bottom: rem-calc(25);
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.accordion-navigation {
+	position: relative;
+	margin-bottom: rem-calc(1) !important;
+
+	
+	&:before {
+		display: block;
+		position: absolute;
+		top: 15px;
+		left: 18px;
+		@extend .fa;
+		content: "\f055";
+		color: $white;
+		font-size: rem-calc(18);
+	}
+
+	&.active {
+		&:before {
+			content: "\f056";
+		}
+	}
+
+	> a { 
+		padding-left: rem-calc(45) !important;
+		margin-bottom: rem-calc(1);
+	}
+}

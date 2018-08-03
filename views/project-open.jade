@@ -1,0 +1,118 @@
+<!doctype html>
+html(class="no-js" lang="en")
+  include includes/_head
+  body.home
+    include includes/_mobile-nav
+
+    .content-wrapper
+      include includes/_intro
+      include includes/_main-nav
+    
+      article.project--open
+        .row
+          .medium-8.columns
+            h4.title--topic Projekter
+            h1 Strukturelle tekstsamtaler
+        .row
+          .medium-8.columns
+            .project--open__content
+              img(src="images/content/project.jpg")
+
+              p Aliquam erat volutpat. Praesent eget nisi dapibus, pellentesque nisi non, volutpat magna. Nullam finibus justo sapien, nec imperdiet nulla vehicula a. Cras posuere iaculis tempor. Cras non nulla vitae ante bibendum mattis. Nunc sagittis augue sed velit posuere sagittis.
+
+              p Phasellus venenatis turpis vitae libero efficitur, quis ullamcorper urna tristique. Suspendisse et elit condimentum, feugiat turpis id, hendrerit nisi. Sed euismod aliquet lectus, non condimentum nisl luctus sit amet. 
+
+            <! -- .project--open__content -->
+
+            .project__reference
+              ul.accordion(data-accordion)
+                li.accordion-navigation
+                  <a href="#panel1">Bag projekter</a>
+                  div.content(id="panel1")
+                    p Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                li.accordion-navigation
+                  <a href="#panel2">Literatur</a>
+                  div.content(id="panel2")
+                    div
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet tellus auctor nisi aliquet ultrices. Morbi leo nisi, pulvinar eget metus lobortis, feugiat pretium diam. Donec fringilla nisl eget erat mollis, eu faucibus urna mollis. Fusce ex enim, fringilla ut auctor dignissim, mattis sed odio. 
+                    div
+                      p Praesent fermentum augue pharetra massa ultrices, ac convallis ex vulputate. Vestibulum ut eleifend lorem, sed ornare enim. In porttitor eros vitae purus elementum, ac pellentesque diam tincidunt. Sed sed turpis nunc. Morbi eu tempus risus.
+
+                    div 
+                      p Sed aliquet odio nisi, quis vulputate lorem tristique at. 
+                      p Proin faucibus neque a lorem aliquam ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi a metus purus. Aliquam diam ipsum, vehicula nec lorem nec, tempus luctus ligula. Cras sit amet ante mattis, commodo quam non, consectetur lectus. 
+                    div 
+                      p <strong>Curabitur nec tortor vel felis porta pellentesque non quis dui.</strong>
+                      p Donec mauris enim, viverra sed fermentum in, vestibulum sit amet orci. Maecenas finibus dolor sed erat rutrum, vel egestas felis consectetur.
+
+                li.accordion-navigation
+                  <a href="#panel3">Samarbejdspartnere</a>
+                  div.content(id="panel3")
+                    p Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                li.accordion-navigation
+                  <a href="#panel4">Projektkonsulenter</a>
+                  div.content(id="panel4")
+                    p Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+              <!-- .accordion -->
+            .widget
+              h4 Bilag
+              ul.list--downloads
+                li
+                  a <span class="fa fa-file-pdf-o"></span> Hent projektbeskrivelsen: Udvikling af læseforståelse gennem strukturerede 
+                li
+                  a <span class="fa fa-file-pdf-o"></span> Hent projektbeskrivelsen
+                li
+                  a <span class="fa fa-file-pdf-o"></span> Hent something
+
+            .list--actions
+              ul
+                li: a(href='#')
+                  <i class="fa fa-facebook-square"></i> Del på Facebook
+                li: a(href='#')
+                  <i class="fa fa-envelope"></i> Del på email
+                li: a(href='#')
+                  <i class="fa fa-print"></i> Udskriv
+                li: a(href='#')
+                  <i class="fa fa-book"></i> Hent oplæsningsprogram
+            .link--copy.js-copy
+              a(href="#") Kopier link
+              strong http://localhost/freelancing-projects/videnomlaesning/videnom-open.html?
+
+          <!-- .large-8.columns -->
+
+          .medium-4.columns
+            .sidebar.mtsm-20
+              .widget.widget--current
+                .widget__badge I gang
+                .list--eventinfo
+                  li
+                    h4 Startdato
+                    p 1. januar 2015
+                  li
+                    h4 Slutdato
+                    p 31. december 2015
+                  li
+                    h4 STØTTEYdere
+                    p Egmontfonden
+                    p Undervisningsministeriet
+                
+              .profile
+                .profile__image
+                  img(src="images/content/profile.jpg")
+                .profile__content
+                  h5 Projektleder
+                  em Henriette Romme Lund
+                  a.link--simplified(href="tel:+4541897186") +45 41 89 71 86
+                  a(href="mailto:hrlu@ucc.dk" ) hrlu@ucc.dk
+
+
+            <!-- sidebar -->
+          <!-- .large-4.columns -->
+        <!-- .row -->
+
+      include includes/_footer
+    <!-- content-wrapper -->
+
+    include includes/_scripts
+  <!-- body -->

@@ -1,0 +1,23 @@
+/*=========================================================
+
+  BUTTONS
+
+=========================================================*/
+
+
+.button, input.button {
+	font-size: rem-calc(14) !important;
+	line-height: rem-calc(16);
+	text-align: center;
+	width: 100%;
+	padding: rem-calc(11) rem-calc(15) rem-calc(10);
+	display: inline-block;
+	@include appearance("none !important");
+	background: $primary-color;
+	color: white;
+
+	&:hover, &:focus, &:active {
+		color: $white;
+		background-color: scale-color($primary-color, $lightness: -20%);
+	}
+}

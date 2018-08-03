@@ -1,0 +1,30 @@
+/*=========================================================
+
+  INTRODUCTION
+  	page introduction with bigger letters
+
+=========================================================*/
+
+.introduction {
+	margin-top: rem-calc(55);
+	@extend .clearfix;
+
+	@media #{$medium-only} {
+		margin-top: rem-calc(35);
+	}
+
+	@media #{$small-only} {
+		margin-top: rem-calc(15);
+	}
+
+	p {
+		font-size: rem-calc(17);
+		line-height: 1.4;
+		margin-top: rem-calc(10);
+		display: block;
+		width: 100%;
+		float: left;
+	}
+
+	h4 { color: $grey; }
+}

@@ -1,0 +1,50 @@
+/*=========================================================
+
+  FOOTER
+
+=========================================================*/
+
+
+.main-footer {
+	background: $bg;
+	padding-top: rem-calc(35);
+	padding-bottom: rem-calc(60);
+	margin-top: rem-calc(55);
+
+	@media #{$small-only} {
+		padding-top: 0;
+	}
+
+	li {
+		margin-top: rem-calc(15);
+		&:first-child {
+			margin-top: 0;
+		}
+
+		a {
+			margin-top: 0;
+		}
+	}
+
+	h5 {
+		text-transform: uppercase;
+		margin-bottom: rem-calc(25);
+
+		@media #{$small-only} {
+			margin-top: rem-calc(35);
+		}
+	}
+
+	strong {
+		display: block;
+	}
+
+	ul {
+		margin: 0;
+	}
+
+	a {
+		display: block;
+		margin-top: rem-calc(12);
+	}
+}

@@ -1,0 +1,188 @@
+/*=========================================================
+
+  FORMS
+
+=========================================================*/
+
+label {
+	display: block;
+}
+
+input {
+	border: none;
+	max-width: 100%;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+select {
+	border: none;
+	&:focus {
+		outline: none;
+	}
+}
+
+input[type="submit"] {
+	background: $primary-color;
+	color: white;
+	&:hover, &:focus, &:active {
+		background-color: scale-color($primary-color, $lightness: -20%);
+	}
+}
+
+.form--search {
+	position: relative;
+	margin-top: rem-calc(10);
+
+	@media #{$small-only} {
+		margin-top: rem-calc(5);
+		margin-bottom: rem-calc(5);
+	}
+
+	i {
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		margin-top: rem-calc(-7);
+		display: block;
+		width: 15px;
+		height: 14px;
+		font-size: rem-calc(16);
+	}
+
+	input[type="text"] {
+		
+		width: 210px;
+		height: 40px;
+		padding-right: rem-calc(35);
+		padding-left: rem-calc(20);
+		font-size: rem-calc(16);
+		color: $dark-grey !important;
+		border: none;
+		background-image: none !important;
+		@include appearance("none !important");
+
+		@include input-placeholder {
+			font-size: rem-calc(16);
+			color: $dark-grey !important;
+			opacity: 1 !important;
+		}
+
+		@media #{$medium-down} {
+			width: 160px;
+		}
+	}
+}
+
+.field--half {
+	width: 50%;
+	padding-left: rem-calc(5);
+	float: left;
+
+	&:first-child {
+		padding-left: 0;
+		padding-right: rem-calc(5);
+	}
+
+	@media #{$medium-down} {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0 !important;
+	}
+}
+
+.checkbox--custom {
+	input[type="checkbox"] {
+		display: none;
+	}
+
+	label {
+		position: relative;
+		padding-left: rem-calc(30);
+		line-height: rem-calc(20);
+
+		&:before {
+			display: block;
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 20px;
+			background: $white;
+			font-family: "FontAwesome";
+			text-align: center;
+			color: $primary-color;
+		}
+	}
+
+	input[type="checkbox"]:checked + label {
+		&:before {
+			content: "\e600";
+			font-family: "icomoon";
+		}
+	}
+}
+
+.select--custom {
+	position: relative;
+
+	select {
+		@include appearance("none !important");
+		color: $dark-grey;
+		background-color: $white;
+		font-family: $font-family-sans-serif;
+	}
+
+	&:after {
+		display: block;
+		position: absolute;
+		top: 16px;
+		right: 20px;
+		color: $primary-color;
+		font-family: "FontAwesome";
+		content: "\f0d7";
+		font-size: rem-calc(21);
+		height: 10px;
+		line-height: rem-calc(10);
+	}
+}
+
+.filter {
+	// margin-top: rem-calc(35);
+
+	@media #{$medium-down} {
+		margin-top: rem-calc(10);
+	}
+
+	label {
+		font-size: rem-calc(14);
+		line-height: rem-calc(40);
+
+		@media #{$large-up} {
+			width: auto;
+			float: left;
+		}
+	}
+
+	select {
+		background: $bg;
+		height: 40px;
+		padding-left: rem-calc(15);
+		padding-right: rem-calc(30);
+		width: 230px;
+		float: right;
+
+		@media #{$medium-down} {
+			width: 100%;
+		}
+	}
+}
+
+.error {
+	input {
+		border: 1px solid $primary-color;
+	}
+}

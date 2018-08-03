@@ -1,0 +1,62 @@
+/*=========================================================
+
+  GLOBAL STYLES
+
+=========================================================*/
+
+.main-content {
+	margin-top: rem-calc(12);
+
+	> .row {
+		margin-top: rem-calc(30);
+
+    @media #{$small-only} {
+      margin-top: 0;
+    }
+	}
+}
+
+.content-wrapper {
+  max-width: 100%;
+  width: 100%;
+  min-height: 100%;
+  position:relative;
+  left: 0;
+  @include transition(all  0.2s ease-in);
+  z-index: 2;
+  background: $body-bg;
+  overflow-x: hidden;
+  @include box-sizing(border-box);
+
+  &.is-pushed-left {
+    // -webkit-transform: translate3d(270px,0,0);
+    // -moz-transform: translate3d(270px,0,0);
+    // -ms-transform: translate3d(270px,0,0);
+    // -o-transform: translate3d(270px,0,0);
+    // transform: translate3d(270px,0,0);
+    left: 270px;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.collapse-for-small {
+  @media #{$small-only} {
+    padding: 0 !important;
+  }
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+	@include transition(all  0.2s ease-in);
+
+	body.overflow-hidden & {
+		left: 270px;
+	}
+}

@@ -1,0 +1,68 @@
+/*=========================================================
+
+  PROJECT
+
+  01. #PROJECT OPEN
+  	// used for open project page
+
+=========================================================*/
+
+
+/*=======================================================
+   01. #PROJECT OPEN
+//=======================================================*/
+
+.project--open {
+	padding-top: rem-calc(55);
+
+	@media #{$medium-only} {
+		padding-top: rem-calc(35);
+	}
+
+	@media #{$small-only} {
+		padding-top: rem-calc(15);
+	}
+
+	p {
+		margin-bottom: rem-calc(25);
+	}
+
+	em {
+		color: $grey;
+		font-style: normal;
+	}
+
+	img {
+		margin-bottom: rem-calc(35);
+	}
+
+	h1 {
+		min-height: 90px;
+	}
+
+	h3 {
+		margin-bottom: rem-calc(2);
+	}
+}
+
+.project--open__content {
+	font-family: $font-family-thin;
+	
+	ul, div, p {
+		font-size: rem-calc(17);
+	}
+
+	ul li {
+		margin-top: rem-calc(2);
+	}
+
+	strong {
+		font-family: $font-family-black;
+	}
+
+
+	p {
+		font-family: $font-family-thin;
+	}
+}
+

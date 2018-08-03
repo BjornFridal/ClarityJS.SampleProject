@@ -1,0 +1,21 @@
+/*=========================================================
+
+  #MODALS
+
+=========================================================*/
+
+.reveal-modal {
+	.button { margin-top: rem-calc(15) !important; }
+
+	.fa-times {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		color: $dark-grey;
+		font-size: rem-calc(18);
+	}
+}
+
+.reveal-modal-bg {
+	background: rgba(0, 0, 0, 0.7);
+}

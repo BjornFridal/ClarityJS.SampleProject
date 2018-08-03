@@ -1,0 +1,100 @@
+<!doctype html>
+html(class="no-js" lang="en")
+  include includes/_head
+  body
+    include includes/_mobile-nav
+
+    .content-wrapper
+      include includes/_intro
+      include includes/_main-nav
+
+      .row
+        .medium-8.small-12.columns
+          .introduction
+            h4.title--topic Aktuelt
+            h1 Nyt om literacy
+
+        .medium-4.large-offset-8.small-12.columns
+          form.filter.mtmd-20(method="get")
+            label Filtrer
+            .select--custom
+              select
+                option(value="volvo") Vaelg emne
+                option(value="saab") News
+                option(value="mercedes") Mercedes
+                option(value="audi") Audi
+      .row
+        .small-12.columns
+          .main-content.clearfix
+            .row(data-equalizer="row-1" data-equalizer-mq="medium-up")
+              .medium-4.small-12.columns
+                article.article.article--news.with-image(data-equalizer-watch="row-1")
+                  .article__image--full
+                    img(src="images/content/news-1.jpg")
+                  header.article__header 12.Juli 2015
+                  h3 Støt dit barn i arbejdet med skolens tekser
+                  p Barn i arbejdet med teksterne fra skolen. barn i arbejdet med teksterne fra skolen.lobortis nunc id gravida.
+                  a.link--highlighted(href="#") Læs hele nyheden
+
+              .medium-4.small-12.columns
+                article.article.article--news(data-equalizer-watch="row-1")
+                  header.article__header 12.Juli 2015
+                  h3 Godt børnesprog ved børnesprog ved 
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. lobortis nunc id gravida.
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida.   
+                  a.link--highlighted(href="#") Læs hele nyheden
+
+              .medium-4.small-12.columns
+                article.article.article--news(data-equalizer-watch="row-1")
+                  header.article__header 12.Juli 2015
+                  h3 Hjælp med læseteknologi under uddannelse
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. lobortis nunc id gravida.
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida.   
+                  a.link--highlighted(href="#") Læs hele nyheden
+
+
+            .row(data-equalizer="row-2" data-equalizer-mq="medium-up")
+              .medium-4.small-12.columns
+                article.article.article--news(data-equalizer-watch="row-2")
+                  header.article__header 12.Juli 2015
+                  h3 Støt dit barn i arbejdet med skolens tekser
+                  p Barn i arbejdet med teksterne fra skolen. barn i arbejdet med teksterne fra skolen.
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. lobortis nunc id gravida.
+                
+                  a.link--highlighted(href="#") Læs hele nyheden
+
+              .medium-4.small-12.columns
+                article.article.article--news(data-equalizer-watch="row-2")
+                  header.article__header 12.Juli 2015
+                  h3 Den gode opgave
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida.  
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida.  
+                  a.link--highlighted(href="#") Læs hele nyheden
+
+              .medium-4.small-12.columns
+                article.article.article--news.with-image(data-equalizer-watch="row-2")
+                  .article__image--full
+                    img(src="images/content/news-2.jpg")
+                  header.article__header 12.Juli 2015
+                  h3 Hjælp med læseteknologi under uddannelse
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. 
+                  a.link--highlighted(href="#") Læs hele nyheden
+
+            <!-- .row -->
+        <!-- .small-12.columns -->
+      <!-- .row -->
+
+      .row
+        .small-12.columns
+          .pagination
+            ul
+              li.current: a(href="#") 1
+              li: a(href="#") 2
+              li: a(href="#") 3
+
+      include includes/_footer
+    <!-- content-wrapper -->
+    include includes/_scripts
+
+  <!-- body -->
+

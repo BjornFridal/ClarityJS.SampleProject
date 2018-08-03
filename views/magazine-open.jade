@@ -1,0 +1,212 @@
+<!doctype html>
+html(class="no-js" lang="en")
+  include includes/_head
+  body.home
+    include includes/_mobile-nav
+
+    .content-wrapper
+      include includes/_intro
+      include includes/_main-nav
+    
+      article.magazine--open
+        .row
+          .large-8.columns
+            h4.title--topic Tidsskrift
+            h1 Skole i hjem - Hjem i skole
+            h4.title--light Nr. 17. -2005
+
+        .row
+          .medium-8.columns
+            .article--open__content
+              img(src="images/content/magazine-3.jpg")
+
+              p Aliquam erat volutpat. Praesent eget nisi dapibus, pellentesque nisi non, volutpat magna. 
+
+              p Phasellus venenatis turpis vitae libero efficitur, quis ullamcorper urna tristique. Suspendisse et elit condimentum, feugiat turpis id, hendrerit nisi. Sed euismod aliquet lectus, non condimentum nisl luctus sit amet. 
+
+              p Nullam finibus justo sapien, nec imperdiet nulla vehicula a. Cras posuere iaculis tempor. Cras non nulla vitae ante bibendum mattis. Nunc sagittis augue sed velit posuere sagittis. Nullam finibus justo sapien, nec imperdiet nulla vehicula a. Cras posuere iaculis tempor. Cras non nulla vitae ante bibendum mattis. Nunc sagittis augue sed velit posuere sagittis.
+            <! -- .article--open__content -->
+
+            .list--actions
+              ul
+                li: a(href='#')
+                  <i class="fa fa-facebook-square"></i> Del på Facebook
+                li: a(href='#')
+                  <i class="fa fa-envelope"></i> Del på email
+                li: a(href='#')
+                  <i class="fa fa-print"></i> Udskriv
+                li: a(href='#')
+                  <i class="fa fa-book"></i> Hent oplæsningsprogram
+            .link--copy.js-copy
+              a(href="#") Kopier link
+              strong http://localhost/freelancing-projects/videnomlaesning/videnom-open.html?
+
+          <!-- .large-8.columns -->
+
+
+          .medium-4.columns
+            .sidebar.mtmd-20
+              .widget.widget--dark
+                h4 HENT VIDEN OM Literacy
+                ul.list--downloads
+                  li
+                    a(href="#") <span class="fa fa-file-pdf-o"></span> Viden om Literacy 17: Skole i hjem  - Hjem i skole
+
+              .widget
+                h4 FÅ VIDEN OM LITERACY I INDBAKKEN
+                form(data-abide)
+                  .clearfix
+                    .field--half
+                      label(for="name") Fornavn
+                      input(type="text" id="name" required)
+                    .field--half
+                      label(for="surname") Efternavn
+                      input(type="text" id="surname" required)
+                  div
+                    label(for="email") Emailadresse
+                    input(type="email" id="email" required)
+                  div
+                    label(for="employment") Ansættelsessted
+                    .select--custom
+                      select(id="employment")
+                        <option value="teacher">Teacher</option>
+                        <option value="philosopher">Philosopher</option>
+                  div
+                    ul.checkbox--custom.clearfix
+                      li.field--half
+                        input(type="checkbox" id="newsletter")
+                        label(for="newsletter") Nyhedsbrev
+                      li.field--half
+                        input(type="checkbox" id="magazine")
+                        label(for="magazine") Tidsskrift(PDF)
+                  input(type="submit" class="button" value="Timeld")
+
+            <!-- sidebar -->
+          <!-- .large-4.columns -->
+        <!-- .row -->
+        
+        .main-content.clearfix
+          .row
+            .small-12.columns
+              h4.title--light.mb-0 Hent de enkelte artikler
+
+          .row
+            .medium-4.small-12.columns
+              article.article.article--download
+                header.article__header Illustration
+                h3 Jeg vil gerne lære at læse og skrive...
+                p Af Anders Morgenthaler
+                a.link--download(href="#") Hent pdf
+                a.link--details.js-details-toggle(href="#")
+                  span.show-details Se detaljer
+                  span.hide-details Luk detaljer
+                .article__details
+                  p I projektet og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin.
+
+            .medium-4.small-12.columns
+              article.article.article--download
+                header.article__header Artikel
+                h3 Indledning: Børn og unge lærer ikke kun at læse og skrive, når de er i skole. De lærer det også derhjemme
+                p Af Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                a.link--download(href="#") Hent pdf
+                a.link--details.js-details-toggle(href="#")
+                  span.show-details Se detaljer
+                  span.hide-details Luk detaljer
+                
+                .article__details
+                  p I projektet og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin.
+
+            .medium-4.small-12.columns
+              article.article.article--download
+                header.article__header Artikel
+                h3 Det er hvad forældrene gør og ikke hvem de er, der har betydning!
+                p Af Lorem ipsum dolor sit 
+                a.link--download(href="#") Hent pdf
+                a.link--details.js-details-toggle(href="#")
+                  span.show-details Se detaljer
+                  span.hide-details Luk detaljer
+                .article__details
+                  p I projektet og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin
+
+          .row
+            .medium-4.small-12.columns
+              article.article.article--download
+                header.article__header Illustration
+                h3 Jeg vil gerne lære at læse og skrive...
+                p Af Anders Morgenthaler
+                a.link--download(href="#") Hent pdf
+                a.link--details.js-details-toggle(href="#")
+                  span.show-details Se detaljer
+                  span.hide-details Luk detaljer
+                .article__details
+                  p I projektet og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin.
+
+            .medium-4.small-12.columns
+              article.article.article--download
+                header.article__header Artikel
+                h3 Indledning: Børn og unge lærer ikke kun at læse og skrive, når de er i skole. De lærer det også derhjemme
+                p Af Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                a.link--download(href="#") Hent pdf
+                a.link--details.js-details-toggle(href="#")
+                  span.show-details Se detaljer
+                  span.hide-details Luk detaljer
+                .article__details
+                  p I projektet og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin.
+
+            .medium-4.small-12.columns
+              article.article.article--download
+                header.article__header Artikel
+                h3 Det er hvad forældrene gør og ikke hvem de er, der har betydning!
+                p Af Lorem ipsum dolor sit 
+                a.link--download(href="#") Hent pdf
+                a.link--details.js-details-toggle(href="#")
+                  span.show-details Se detaljer
+                  span.hide-details Luk detaljer
+                .article__details
+                  p I projektet og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin.
+
+          .row
+            .medium-4.small-12.columns
+              article.article.article--download
+                header.article__header Illustration
+                h3 Jeg vil gerne lære at læse og skrive...
+                p Af Anders Morgenthaler
+                a.link--download(href="#") Hent pdf
+                a.link--details.js-details-toggle(href="#")
+                  span.show-details Se detaljer
+                  span.hide-details Luk detaljer
+
+                .article__details
+                  p I projektet og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin.
+
+            .medium-4.small-12.columns
+              article.article.article--download
+                header.article__header Artikel
+                h3 Indledning: Børn og unge lærer ikke kun at læse og skrive, når de er i skole. De lærer det også derhjemme
+                p Af Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                a.link--download(href="#") Hent pdf
+                a.link--details.js-details-toggle(href="#")
+                  span.show-details Se detaljer
+                  span.hide-details Luk detaljer
+                .article__details
+                  p I projektet og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin.
+
+            .medium-4.small-12.columns
+              article.article.article--download
+                header.article__header Artikel
+                h3 Det er hvad forældrene gør og ikke hvem de er, der har betydning!
+                p Af Lorem ipsum dolor sit 
+                a.link--download(href="#") Hent pdf
+                a.link--details.js-details-toggle(href="#")
+                  span.show-details Se detaljer
+                  span.hide-details Luk detaljer
+                
+                .article__details
+                  p I projektet og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin. og begrænsninger på skolens tre trin.
+
+
+      include includes/_footer
+    <!-- content-wrapper -->
+
+    include includes/_scripts
+  <!-- body -->

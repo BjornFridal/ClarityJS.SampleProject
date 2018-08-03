@@ -1,0 +1,94 @@
+<!doctype html>
+html(class="no-js" lang="en")
+  include includes/_head
+  body
+    include includes/_mobile-nav
+
+    .content-wrapper
+      include includes/_intro
+      include includes/_main-nav
+
+      .row
+        .medium-8.small-12.columns
+          .introduction
+            h4.title--uppercase Tidsskrift
+            h1 Viden om Literacy
+            p Viden om læsning i alle livets faser. Du kan ﬁltrere på anvendelsessted og kun få viden om læsning i alle livets faser. Nam congue ante nec vehicula bibendum. Fusce sed viverra tortor. Fusce eros nunc, luctus sed mi eu, vehicula euismod est. Ut non lacinia tellus.
+      .row
+        .small-12.columns
+          .main-content.clearfix
+            .row
+              .large-8.medium-12.columns
+                article.article.article--magazine.article--soon
+                  .article__image
+                    img(src="images/content/magazine-1.jpg")
+                  .article__content
+                    .article__badge--longer Kommer snart
+                    header.article__header Nr. 18
+                    h2 Flersprogede børns læsning og læring
+                    p Barn i arbejdet med teksterne fra skolen. barn i arbejdet med teksterne fra skolen.
+                    a.link--highlighted(href="#") Læs om tidsskriftet
+                <! --article -->
+
+                article.article.article--magazine
+                  .article__image
+                    img(src="images/content/magazine-2.jpg")
+                  .article__content
+                    header.article__header Nr. 17
+                    h2 Skole i hjem – Hjem i skole
+                    p Barn i arbejdet med teksterne fra skolen. barn i arbejdet med teksterne fra skolen. skole. De lærer det også derhjemme. De lærer sprog når de.
+                    a.link--highlighted(href="#") Læs om tidsskriftet
+                <! --article -->
+
+                .row
+                  .small-12.columns
+                    .pagination
+                      ul
+                        li.current: a(href="#") 1
+                        li: a(href="#") 2
+                        li: a(href="#") 3
+
+              <!-- .large-8 -->
+              .large-4.medium-12.columns
+                .sidebar.mtmd-20
+                  .widget
+                    h4 FÅ VIDEN OM LITERACY I INDBAKKEN
+                    form(data-abide)
+                      .clearfix
+                        .field--half
+                          label(for="name") Fornavn
+                          input(type="text" id="name" required)
+                        .field--half
+                          label(for="surname") Efternavn
+                          input(type="text" id="surname" required)
+                      div
+                        label(for="email") Emailadresse
+                        input(type="email" id="email" required)
+                      div
+                        label(for="employment") Ansættelsessted
+                        .select--custom
+                          select(id="employment")
+                            <option value="teacher">Teacher</option>
+                            <option value="philosopher">Philosopher</option>
+                      div
+                        ul.checkbox--custom.clearfix
+                          li.field--half
+                            input(type="checkbox" id="newsletter")
+                            label(for="newsletter") Nyhedsbrev
+                          li.field--half
+                            input(type="checkbox" id="magazine")
+                            label(for="magazine") Tidsskrift(PDF)
+                        input(type="submit" class="button" value="Timeld")
+                <!-- sidebar -->
+              <!-- .columns -->
+           
+            <!-- .row -->
+        <!-- .small-12.columns -->
+      <!-- .row -->
+
+      include includes/_footer
+    <!-- content-wrapper -->
+    include includes/_scripts
+
+  <!-- body -->
+

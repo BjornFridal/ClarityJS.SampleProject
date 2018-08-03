@@ -1,0 +1,120 @@
+/*=========================================================
+
+  #WIDGET
+
+  01. #WIDGET GLOBAL
+
+  02. #WIDGET CURRENT
+
+  03. #WIDGET BADGE
+  
+  04. #WIDGET DARK
+
+=========================================================*/
+
+/*=======================================================
+   01. #WIDGET GLOBAL
+//=======================================================*/
+
+.widget {
+	background: $bg;
+	margin-top: rem-calc(35);
+	padding: rem-calc(19);
+
+	input[type="text"], input[type="email"], select {
+		height: 40px;
+		line-height: 40px;
+		padding: 0 rem-calc(12);
+		width: 100%;
+		color: $grey;
+
+		@include input-placeholder {
+			color: $grey;
+		}
+	}
+
+	h4 {
+		text-transform: uppercase;
+	}
+
+	label {
+		font-size: rem-calc(14);
+		margin-top: rem-calc(10);
+		margin-bottom: rem-calc(5);
+	}
+
+	.button {
+		margin-bottom: 0;
+		margin-top: rem-calc(4);
+	}
+
+	.checkbox--custom {
+		margin-top: rem-calc(10);
+	}
+
+	p {
+		margin-top: rem-calc(20) !important;
+		margin-bottom: 0 !important;
+		&:nth-of-type(1) {
+			margin-top: 0 !important;
+		}
+	}
+
+	.sidebar & {
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+/*=======================================================
+   02. #WIDGET CURRENT
+//=======================================================*/
+
+.widget--current {
+	overflow: hidden;
+	position: relative;
+
+	h4 {
+		max-width: 205px;
+	}
+}
+
+/*=======================================================
+   03. #WIDGET BADGE
+//=======================================================*/
+
+.widget__badge {
+	background: $primary-color;
+	color: $white;
+	text-transform: uppercase;
+	font-size: rem-calc(14);
+	@include transform(rotate(45deg));
+	position: absolute;
+	top: 25px;
+	right: -33px;
+	width: 150px;
+	text-align: center;
+	height: 30px;
+	line-height: rem-calc(30);
+	font-family: $font-family-thin;
+
+	@media #{$medium-only} {
+		top: 10px;
+		right: -49px;
+	}
+}
+
+/*=======================================================
+   04. #WIDGET DARK
+//=======================================================*/
+
+.widget--dark {
+	background: $secondary-color;
+	font-family: $font-family-semibold;
+
+	h4, a {
+		color: $white !important;
+	}
+	
+}

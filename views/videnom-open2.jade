@@ -1,0 +1,117 @@
+<!doctype html>
+html(class="no-js" lang="en")
+  include includes/_head
+  body.home
+    include includes/_mobile-nav
+
+    .content-wrapper
+      include includes/_intro
+      include includes/_main-nav
+      
+      article.article--open
+        .row
+          .medium-8.columns
+            h4.title--topic Viden om
+            h1 Hjælp med læseteknologi under  uddannelse
+            .article__author
+              em Skrevet af <a href="#">Kirsten Friis Larsen </a> og <a href="#"> Bent Saabye Jensen </a>
+        .row
+          .medium-8.columns
+            .article--open__content
+              p Hvis du er ordblind kan du på de ﬂeste uddannelser søge om hjælpemidler 
+              div Det gælder:
+
+                ul
+                  li Videregående uddannelser
+                  li Gymnasiale uddannelser
+                  li Erhvervsuddannelser (EUD)
+                  li SOSU og Pædagogisk assistentuddannelsen (PAU)
+                  li Landbrugets grunduddannelse
+
+              p Aliquam erat volutpat. Praesent eget nisi dapibus, pellentesque nisi non, volutpat magna. Nullam finibus justo sapien, nec imperdiet nulla vehicula a. Cras posuere iaculis tempor. Cras non nulla vitae ante bibendum mattis. Nunc sagittis augue sed velit posuere sagittis.
+
+              p: a(href="#") Laes mere om dine muligheder på http://www.hto.nu
+
+              div <strong>Det gælder:</strong>
+                ul
+                  li Videregående uddannelser
+                  li Gymnasiale uddannelser
+                  li Erhvervsuddannelser (EUD)
+                  li SOSU og Pædagogisk assistentuddannelsen (PAU)
+                  li Landbrugets grunduddannelse
+
+
+              p Phasellus venenatis turpis vitae libero efficitur, quis ullamcorper urna tristique. Suspendisse et elit condimentum, feugiat turpis id, hendrerit nisi. Sed euismod aliquet lectus, non condimentum nisl luctus sit amet. 
+
+              p: a(href="#") Laes mere om dine muligheder på http://www.hto.nu
+
+            <! -- .article--open__content -->
+            .article__reference
+              ul.accordion(data-accordion)
+                li.accordion-navigation.active
+                  <a href="#panel1">Literatur</a>
+                  div.content.active(id="panel1")
+                    div
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet tellus auctor nisi aliquet ultrices. Morbi leo nisi, pulvinar eget metus lobortis, feugiat pretium diam. Donec fringilla nisl eget erat mollis, eu faucibus urna mollis. Fusce ex enim, fringilla ut auctor dignissim, mattis sed odio. 
+                    div
+                      p Praesent fermentum augue pharetra massa ultrices, ac convallis ex vulputate. Vestibulum ut eleifend lorem, sed ornare enim. In porttitor eros vitae purus elementum, ac pellentesque diam tincidunt. Sed sed turpis nunc. Morbi eu tempus risus.
+
+                    div 
+                      p Sed aliquet odio nisi, quis vulputate lorem tristique at. 
+                      p Proin faucibus neque a lorem aliquam ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi a metus purus. Aliquam diam ipsum, vehicula nec lorem nec, tempus luctus ligula. Cras sit amet ante mattis, commodo quam non, consectetur lectus. 
+                    div 
+                      p <strong>Curabitur nec tortor vel felis porta pellentesque non quis dui.</strong>
+                      p Donec mauris enim, viverra sed fermentum in, vestibulum sit amet orci. Maecenas finibus dolor sed erat rutrum, vel egestas felis consectetur.
+
+                li.accordion-navigation
+                  <a href="#panel2">Projekter</a>
+                  div.content(id="panel2")
+                    p Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                li.accordion-navigation
+                  <a href="#panel3">Netværk og websites</a>
+                  div.content(id="panel3")
+                    p Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <!-- .article__reference -->
+
+            .list--actions
+              ul
+                li: a(href='#')
+                  <i class="fa fa-facebook-square"></i> Del på Facebook
+                li: a(href='#')
+                  <i class="fa fa-envelope"></i> Del på email
+                li: a(href='#')
+                  <i class="fa fa-print"></i> Udskriv
+                li: a(href='#')
+                  <i class="fa fa-book"></i> Hent oplæsningsprogram
+            .link--copy.js-copy
+              a(href="#") Kopier link
+              strong http://localhost/freelancing-projects/videnomlaesning/videnom-open.html?
+
+          <!-- .medium-8.columns -->
+
+          .medium-4.columns
+            .sidebar.mt-20
+              .profile
+                .profile__image
+                  img(src="images/content/profile.jpg")
+                .profile__content
+                  h5 FAGLIG konsulent
+                  em Henriette Romme Lund
+                  a.link--simplified(href="tel:+4541897186") +45 41 89 71 86
+                  a(href="mailto:hrlu@ucc.dk" ) hrlu@ucc.dk
+
+              .widget
+                h4 Se OGSÅ
+                ul.list--highlighted
+                  li: a(href="#") Hjælp med læseteknologi under uddannelse
+                  li: a(href="#") Læseteknologi på jobbet
+                  li: a(href="#") Arbejde med ordblindhed
+            <!-- sidebar -->
+          <!-- .medium-4.columns -->
+        <!-- .row -->
+
+      include includes/_footer
+    <!-- content-wrapper -->
+
+    include includes/_scripts
+  <!-- body -->

@@ -1,0 +1,108 @@
+<!doctype html>
+html(class="no-js" lang="en")
+  include includes/_head
+  body.home
+    include includes/_mobile-nav
+
+    .content-wrapper
+      include includes/_intro
+      include includes/_main-nav
+      article.article--open
+        .row
+          .medium-8.columns
+            h4.title--topic Nyheder
+            h1 Tv-interview om læring i familien
+            .article__author
+              em Skrevet af <a href="#">Henriette Romme Lund</a>
+              
+        .row
+          .medium-8.columns
+            .article--open__content
+              p liquam ultrices, ipsum sit amet laoreet sollicitudin, lacus nisi feugiat neque, ut venenatis sem elit at tellus. Suspendisse lacinia lorem pretium interdum vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam eget egestas orci. Nunc mattis porttitor dolor eu ornare. 
+              p Cras vitae ex ultricies, sodales quam quis, semper lorem. Cras pretium, libero sit amet rutrum commodo, turpis nulla rutrum nisl, non sollicitudin dui augue nec nibh. Nulla ut nibh at mauris finibus placerat. Pellentesque ultrices aliquet quam gravida tempor. Praesent eu nisl at neque scelerisque sollicitudin. Mauris imperdiet justo at orci ultrices, id commodo augue euismod. Pellentesque quis dolor aliquam, vehicula sapien non, facilisis augue.
+
+              .video__wrapper
+                iframe(width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen)
+
+              p Aliquam erat volutpat. Praesent eget nisi dapibus, pellentesque nisi non, volutpat magna. Nullam finibus justo sapien, nec imperdiet nulla vehicula a. Cras posuere iaculis tempor. Cras non nulla vitae ante bibendum mattis. Nunc sagittis augue sed velit posuere sagittis.
+              h3 Underoverskrift et ny afsnit
+              p Phasellus venenatis turpis vitae libero efficitur, quis ullamcorper urna tristique. Suspendisse et elit condimentum, feugiat turpis id, hendrerit nisi. Sed euismod aliquet lectus, non condimentum nisl luctus sit amet. 
+              p Pellentesque a condimentum urna <a href="#">Læseteknologi generelt</a>. <a href="#">Sed vehicula</a>, <a href="#">dolor at malesuada tincidunt</a>, lacus sem sollicitudin justo, vel condimentum tortor lacus et orci. Pellentesque cursus et lectus sit amet tempus. Integer sit amet dui et diam aliquet pellentesque. Quisque tincidunt mauris nisi, eu aliquam enim tempus in. Duis id porttitor urna, id ornare enim.
+            <!-- .article-open-content -->
+            .widget
+              h4 OM SPØRG OM LÆSning
+              p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus et gravida arcu, id lacinia elit. 
+              p Mauris id dui ac neque facilisis eleifend volutpat nec mi. Vestibulum nisl augue, vehicula in risus at, tempor posuere ex. Morbi commodo dignissim tellus et pharetra.
+            .list--actions
+              ul
+                li: a(href='#')
+                  <i class="fa fa-facebook-square"></i> Del på Facebook
+                li: a(href='#')
+                  <i class="fa fa-envelope"></i> Del på email
+                li: a(href='#')
+                  <i class="fa fa-print"></i> Udskriv
+                li: a(href='#')
+                  <i class="fa fa-book"></i> Hent oplæsningsprogram
+            .link--copy.js-copy
+              a(href="#") Kopier link
+              strong http://localhost/freelancing-projects/videnomlaesning/videnom-open.html?
+
+          <!-- .large-8.columns -->
+
+          .medium-4.columns
+            .sidebar.mt-20
+              .profile
+                .profile__image
+                  img(src="images/content/profile.jpg")
+                .profile__content
+                  h5 FAGLIG konsulent
+                  em Henriette Romme Lund
+                  a.link--simplified(href="tel:+4541897186") +45 41 89 71 86
+                  a(href="mailto:hrlu@ucc.dk" ) hrlu@ucc.dk
+
+              .widget
+                h4 Se OGSÅ
+                ul.list--highlighted
+                  li: a(href="#") Hjælp med læseteknologi under uddannelse
+                  li: a(href="#") Læseteknologi på jobbet
+                  li: a(href="#") Arbejde med ordblindhed
+
+              .widget
+                h4 FÅ VIDEN OM LITERACY I INDBAKKEN
+                form(data-abide)
+                  .clearfix
+                    .field--half
+                      label(for="name") Fornavn
+                      input(type="text" id="name" required)
+                    .field--half
+                      label(for="surname") Efternavn
+                      input(type="text" id="surname" required)
+                  div
+                    label(for="email") Emailadresse
+                    input(type="email" id="email" required)
+                  div
+                    label(for="employment") Ansættelsessted
+                    .select--custom
+                      select(id="employment")
+                        <option value="teacher">Teacher</option>
+                        <option value="philosopher">Philosopher</option>
+                  div
+                    ul.checkbox--custom.clearfix
+                      li.field--half
+                        input(type="checkbox" id="newsletter")
+                        label(for="newsletter") Nyhedsbrev
+                      li.field--half
+                        input(type="checkbox" id="magazine")
+                        label(for="magazine") Tidsskrift(PDF)
+                  input(type="submit" class="button" value="Timeld")
+
+
+            <!-- sidebar -->
+          <!-- .large-4.columns -->
+        <!-- .row -->
+
+      include includes/_footer
+    <!-- content-wrapper -->
+
+    include includes/_scripts
+  <!-- body -->

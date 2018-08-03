@@ -1,0 +1,260 @@
+/*=========================================================
+
+  NAVIGATION
+
+
+  01. #MAIN NAVIGATION
+
+  02. #SIDE NAVIGATION
+
+=========================================================*/
+
+
+/*=======================================================
+   01. #MAIN-NAVIGATION
+//=======================================================*/
+
+.nav-section {
+  background: $secondary-color;
+}
+
+.main-nav {
+  width: auto;
+  float: left;
+  margin-bottom: 0;
+
+  a { color: $white; }
+
+  > li {
+    display: inline-block;
+    float: left;
+    position: relative;
+
+    &:hover {
+      background: $menu-active;
+      .sub-menu {
+        display: block;
+      }
+    }
+
+    &.active {
+      background: $primary-color !important;
+    }
+
+    > a { 
+      font-size: rem-calc(16);
+      padding: rem-calc(20) rem-calc(30);
+      display: inline-block;
+      font-family: $font-family-thin;
+
+      @media (max-width: 820px) {
+        padding: rem-calc(20) rem-calc(12);
+      }
+    }
+
+    > .sub-menu {
+      display: none;
+      position: absolute;
+      padding: rem-calc(30);
+    }
+  }
+
+  li.multi-columns {
+    > .sub-menu {
+      width: 490px;
+
+      > li {
+        width: auto;
+        float: left;
+        max-width: 33%;
+        margin-top: 0;
+        position: relative;
+
+        > a { display: none; }
+      }
+    }
+
+    &:hover {
+      > .sub-menu {
+        display: flex;
+      }
+    }
+
+    .link--all {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .sub-menu {
+    z-index: 2;
+    background: $menu-active;
+    margin: 0;
+
+    li { 
+      display: block;
+      margin-top: rem-calc(20);
+
+      &:first-child { margin-top: 0;}
+    }
+
+    a {
+      font-size: rem-calc(14);
+      line-height: rem-calc(14);
+      position: relative;
+      padding-left: rem-calc(20);
+      display: block;
+      min-width: 215px;
+      line-height: 1.5;
+
+      &:before {
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 12px;
+        height: 13px;
+        line-height: 13px;
+        font-family: "FontAwesome";
+        content: "\f0a9";
+      }
+    }
+  }
+}
+
+.menu-trigger {
+  @extend .fa-bars;
+  @extend .fa;
+  color: $white;
+  font-size: rem-calc(16);
+  display: inline-block;
+  float: left;
+  margin-top: rem-calc(18);
+  margin-left: rem-calc(8);
+
+  &:hover, &:focus, &:active {
+    color: $white;
+  }
+}
+
+/*=======================================================
+  02. #SIDE-NAVIGATION
+//=======================================================*/
+
+.side-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  min-height: 100%;
+  width: 270px;
+  max-width: 100%;
+  opacity: 1;
+  overflow-y: auto;
+  box-sizing: border-box;
+  color: $white;
+  z-index: 1;
+  padding: 0 0 0;
+  background: $menu-active;
+  @extend .clearfix;
+
+  &.overflow-hidden {
+    opacity: 0;
+    @include transition(opacity 0.1s ease-in 1s);
+  }
+}
+
+.side-navigation--primary {
+  width: 100%;
+  display: block;
+  float: left;
+
+  li {
+    width: 100%;
+  }
+
+  > li.multi-columns {
+    > .sub-menu > li:first-child > a {
+      display: none;
+    }
+  }
+
+  > li {
+    > a {
+      text-transform: uppercase;
+      line-height: rem-calc(18);
+      display: block;
+
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+
+    > .sub-menu {
+      padding-left: rem-calc(30);
+    }
+  }
+
+  a {
+    color: $white;
+    font-size: rem-calc(14);
+    height: auto;
+    min-height: 48px;
+    padding-left: rem-calc(30);
+    padding-top: rem-calc(18);
+    padding-bottom: rem-calc(18);
+    display: block;
+  }
+
+  .sub-menu {
+    margin: 0;
+
+    > a { display: none;}
+
+    .link--all {
+      margin-top: 0 !important;
+      position: relative;
+    }
+
+    a {
+      @extend .link--highlighted;
+      padding-top: 0;
+      padding-bottom: 0;
+      height: auto;
+      min-height: 0;
+      line-height: 1.2;
+      display: block;
+      margin-bottom: rem-calc(20);
+    }
+  }
+
+  li.open > .sub-menu {
+    margin-top: rem-calc(10);
+  }
+}
+
+
+.side-navigation--contacts {
+  padding-left: rem-calc(30);
+  margin-top: rem-calc(110);
+  width: 100%;
+  float: left;
+  clear: both;
+
+  li {
+    margin-top: rem-calc(20);
+
+    &:first-child { margin-top: 0; }
+  }
+
+  strong {
+    display: block;
+  }
+
+  a {
+    display: block;
+    color: $white !important;
+  }
+}
+

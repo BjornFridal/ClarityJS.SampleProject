@@ -1,0 +1,14 @@
+/bower_components/*
+/.sass-cache/*
+*.DS_Store
+_*.html
+
+
+.bowerrc
+.htaccess
+bower.json
+config.rb
+Gemfile
+Gemfile.lock
+humans.txt
+README.md

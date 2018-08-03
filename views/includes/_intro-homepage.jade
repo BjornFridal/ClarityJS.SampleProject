@@ -1,0 +1,32 @@
+.intro.js-intro-home
+  <!-- @TODO Video items are shown only on large screens -->
+  li.show-for-large-up
+    <!-- @TODO choose iframe video or locally kept one -->
+    //- <iframe class="intro__image" src="http://player.vimeo.com/video/17914974" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+    video(class="intro__image" muted width="auto" height="400")
+      <source src="videos/intro.mp4" type="video/mp4">
+
+    .row
+      .small-12.columns
+        a(href="index.html")
+          .logo
+            img.img--advanced(src="images/logo.svg" alt="Viden om Laesning")
+            img.img--simple(src="images/logo.png" alt="Viden om Laesning")
+        .intro__content
+          h2 Vi samler, spreder og skaber <br> viden om læsning
+          a.link--highlighted(href="#")   Læs om vores arbejde
+
+  li
+    img.intro__image(src="images/content/intro.jpg")
+    .row
+      .small-12.columns
+        a(href="index.html")
+          .logo
+            img.img--advanced(src="images/logo.svg" alt="Viden om Laesning")
+            img.img--simple(src="images/logo.png" alt="Viden om Laesning")
+        .intro__content
+          h2 Vi samler, spreder og skaber <br> viden om læsning
+          a.link--highlighted(href="#")   Læs om vores arbejde
+
+<!-- .intro -->

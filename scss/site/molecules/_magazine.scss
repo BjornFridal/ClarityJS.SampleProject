@@ -1,0 +1,45 @@
+/*=========================================================
+
+  MAGAZINE
+
+  01. #MAGZINE OPEN
+  	// used for open magazine page
+
+=========================================================*/
+
+
+/*=======================================================
+   01. #MAGAZINE OPEN
+//=======================================================*/
+
+.magazine--open {
+	padding-top: rem-calc(55);
+
+	p {
+		margin-bottom: rem-calc(25);
+	}
+
+	em {
+		color: $grey;
+		font-style: normal;
+	}
+
+	img {
+		margin-bottom: rem-calc(35);
+	}
+
+	h1 {
+		min-height: 55px;
+	}
+
+	h3 {
+		margin-bottom: rem-calc(2);
+	}
+
+	.title--light {
+		margin-bottom: rem-calc(28);
+	}
+}
+
+
+

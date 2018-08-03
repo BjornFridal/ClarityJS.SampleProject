@@ -1,0 +1,126 @@
+/*=========================================================
+
+  LISTS
+
+
+  01. #LIST DOWNLOADS
+
+  02. #LIST ACTIONS
+
+  03. #LIST HIGHLIGHTED
+
+  04. #LIST EVENT INFO
+
+=========================================================*/
+
+
+/*=======================================================
+   01. #LIST DOWNLOADS
+//=======================================================*/
+
+.list--downloads {
+	margin-bottom: rem-calc(15);
+	
+	li {
+		margin-top: rem-calc(16);
+	}
+
+	a {
+		position: relative;
+		padding-left: rem-calc(30);
+		display: block;
+	}
+
+	.fa {
+		position: absolute;
+		top: 2px;
+		left: 0;
+	}
+
+	.widget--dark & {
+		a { padding-left: rem-calc(25); }
+	}
+}
+
+/*=======================================================
+   02. #LIST ACTIONS
+//=======================================================*/
+
+.list--actions {
+	margin-top: rem-calc(30);
+	
+	li {
+		margin-right: rem-calc(45);
+		display: inline-block;
+		margin-top: rem-calc(10);
+		
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.fa {
+		margin-right: rem-calc(3);
+	}
+}
+
+/*=======================================================
+   03. #LIST HIGHLIGHTED
+//=======================================================*/
+
+.list--highlighted { 
+	li {
+		margin-top: rem-calc(20);
+	}
+
+	a {
+		font-size: rem-calc(14);
+		line-height: 1.2;
+		position: relative;
+		padding-left: rem-calc(20);
+		display: block;
+
+		&:before {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 12px;
+			height: 13px;
+			line-height: 13px;
+			font-family: "FontAwesome";
+			content: "\f0a9";
+		}
+	}
+}
+
+/*=======================================================
+   04. #LIST EVENT INFO
+//=======================================================*/
+
+.list--eventinfo {
+
+	li {
+		list-style-type: none;
+		margin-top: rem-calc(20);
+
+		&:first-child {
+			margin: 0;
+		}
+	}
+
+	h4 {
+		margin: 0;
+	}
+	p {
+		display: block;
+		margin: 0;
+		font-family: $font-family-thin;
+	}
+
+	.widget & {
+		p {
+			margin: 0 !important;
+		}
+	}
+}

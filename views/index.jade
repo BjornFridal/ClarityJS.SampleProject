@@ -1,0 +1,142 @@
+<!doctype html>
+html(class="no-js" lang="en")
+  include includes/_head
+  body.home
+    include includes/_mobile-nav
+
+    .content-wrapper
+      include includes/_intro-homepage
+      include includes/_main-nav
+      .row
+        .medium-8.columns
+          .main-content.clearfix
+            .row
+              section.news
+                .small-12.columns
+                  h4 Nyheder
+                  .row
+                    .medium-6.small-12.columns
+                      article.article
+                        header.article__header 12. Juli 2015
+                        h3 Vi søger en akademisk medarbejder til et barselsvikariat
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. Pellentesque eu lectus neque. Nam dictum turpis eget nisi
+                        a.link--highlighted(href="#") Læs nyheden
+
+                    .medium-6.small-12.columns
+                      article.article
+                        header.article__header 12. Juli 2015
+                        h3 Nyt forskningsprojekt om synets og hjernens evne til at arbejde sammen
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. 
+                        a.link--highlighted(href="#")   Læs nyheden
+                  a.link--highlighted.link--more(href="#") Læs flere nyheden
+              <!-- section -->
+            <!-- .row -->
+
+            .row
+              section.knowledge
+                .medium-6.small-12.columns
+                  h4 Viden om
+                  article.article
+                    header.article__header 12. Juli 2015
+                    h3 Vi søger en akademisk medarbejder til et barselsvikariat
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. Pellentesque eu lectus neque. Nam dictum turpis eget nisi
+                    a.link--highlighted(href="#")   Læs nyheden
+                  a.link--highlighted.link--more(href="#") Se alle emnerne
+              <!-- section -->
+
+              section.projects
+                .medium-6.small-12.columns
+                  h4 Projekter
+                  article.article
+                    header.article__header 12. Juli 2015
+                    h3 Vi søger en akademisk medarbejder til et barselsvikariat
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. Pellentesque eu lectus neque. Nam dictum turpis eget nisi
+                    a.link--highlighted(href="#")   Læs nyheden
+                  a.link--highlighted.link--more(href="#") Se alle projekter
+              <!-- section -->
+            <!-- .row -->
+
+            .row
+              section.knowledge
+                .medium-6.small-12.columns
+                  h4 Tidsskrift
+                  article.article
+                    header.article__header 12. Juli 2015
+                    h3 Vi søger en akademisk medarbejder til et barselsvikariat
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. Pellentesque eu lectus neque. Nam dictum turpis eget nisi
+                    a.link--highlighted(href="#")   Læs nyheden
+                  a.link--highlighted.link--more(href="#") Se alle udgivelserne
+              <!-- section -->
+
+              section.projects
+                .medium-6.small-12.columns
+                  h4 indsatsområde
+                  article.article
+                    header.article__header 12. Juli 2015
+                    h3 Vi søger en akademisk medarbejder til et barselsvikariat
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus lobortis nunc id gravida. Pellentesque eu lectus neque. Nam dictum turpis eget nisi
+                    a.link--highlighted(href="#")   Læs nyheden
+
+                  a.link--highlighted.link--more(href="#") Se alle indsatsområder
+              <!-- section -->
+            <!-- .row -->
+        <!-- .large-8.columns -->
+
+        .medium-4.columns
+          .sidebar.mt-45
+            section.calendar
+              h4 Kalender
+
+              .calendar__info
+                ul
+                  li: a(href="#")
+                    em 8. september 2015, KØBENHAVN
+                    p Status for Literacy 2015
+                  li: a(href="#")
+                    em 22. oktober 2015, KØBENHAVN
+                    p Status for Literacy 2015
+                  li: a(href="#")
+                    em 19. november 2015, KØBENHAVN
+                    p Status for Literacy 2015
+
+                a.link--highlighted.link--on-dark(href="#") Se hele kalenderen
+            <!-- section -->
+            .widget
+              h4 FÅ VIDEN OM LITERACY I INDBAKKEN
+              form(data-abide)
+                .clearfix
+                  .field--half
+                    label(for="name") Fornavn
+                    input(type="text" id="name" required)
+                  .field--half
+                    label(for="surname") Efternavn
+                    input(type="text" id="surname" required)
+                div
+                  label(for="email") Emailadresse
+                  input(type="email" id="email" required)
+                div
+                  label(for="employment") Ansættelsessted
+                  .select--custom
+                    select(id="employment")
+                      <option value="teacher">Teacher</option>
+                      <option value="philosopher">Philosopher</option>
+                div
+                  ul.checkbox--custom.clearfix
+                    li.field--half
+                      input(type="checkbox" id="newsletter")
+                      label(for="newsletter") Nyhedsbrev
+                    li.field--half
+                      input(type="checkbox" id="magazine")
+                      label(for="magazine") Tidsskrift(PDF)
+                input(type="submit" class="button" value="Timeld")
+
+          <!-- sidebar -->
+        <!-- .large-4.columns -->
+      <!-- .row -->
+
+      include includes/_footer
+    <!-- content-wrapper -->
+
+    include includes/_scripts
+
+  <!-- body -->
